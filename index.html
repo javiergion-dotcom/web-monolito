@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>El Monolito</title>
+<title>El Monolito · Navia</title>
 
 <style>
 
@@ -21,194 +21,129 @@ overflow-x:hidden;
 }
 
 .hero{
-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
-url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop');
-background-size:cover;
-background-position:center;
+min-height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
+padding:50px 25px;
+background:#111;
 }
 
-.hero h1{
-font-size:58px;
-margin-bottom:15px;
-letter-spacing:2px;
+.logo{
+width:140px;
+margin-bottom:30px;
 }
 
-.hero p{
-max-width:700px;
-font-size:18px;
-line-height:1.7;
+.dibujo{
+width:100%;
+max-width:900px;
+border-radius:22px;
+box-shadow:0 10px 35px rgba(0,0,0,.45);
+margin-bottom:25px;
+}
+
+.fraseJorge{
+font-size:22px;
+line-height:1.8;
+margin-bottom:40px;
+font-style:italic;
+opacity:.95;
+}
+
+.textoPrincipal{
+max-width:900px;
+font-size:22px;
+line-height:2;
+margin:auto;
 opacity:.92;
 }
 
+.silviaBox{
+margin-top:70px;
+max-width:900px;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.silvia{
+width:100%;
+max-width:420px;
+border-radius:24px;
+box-shadow:0 10px 35px rgba(0,0,0,.5);
+margin-bottom:25px;
+}
+
+.fraseSilvia{
+font-size:26px;
+line-height:1.8;
+font-weight:700;
+}
+
 .firma{
-margin-top:25px;
-font-size:17px;
+margin-top:20px;
+font-size:18px;
 opacity:.8;
 font-style:italic;
 }
 
-.menu{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:20px;
-padding:40px 25px;
-background:#181818;
-}
-
-.card{
-height:170px;
-border-radius:18px;
-overflow:hidden;
-position:relative;
-cursor:pointer;
-transition:.4s;
-box-shadow:0 10px 25px rgba(0,0,0,.4);
-}
-
-.card:hover{
-transform:scale(1.03);
-}
-
-.card img{
-width:100%;
-height:100%;
-object-fit:cover;
-filter:brightness(.65);
-}
-
-.card span{
-position:absolute;
-bottom:18px;
-left:18px;
-font-size:24px;
-font-weight:bold;
-}
-
-.section{
-padding:70px 25px;
-max-width:1200px;
-margin:auto;
-}
-
-.section h2{
-font-size:42px;
-margin-bottom:20px;
-text-align:center;
-}
-
-.section p{
-max-width:850px;
-margin:auto;
-line-height:1.8;
-font-size:19px;
-text-align:center;
-opacity:.92;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-margin-top:45px;
-}
-
-.grid img{
-width:100%;
-border-radius:18px;
-box-shadow:0 8px 25px rgba(0,0,0,.45);
-transition:.4s;
-}
-
-.grid img:hover{
-transform:scale(1.02);
-}
-
-.silvia{
+.menuFinal{
+margin-top:90px;
 display:flex;
 flex-wrap:wrap;
-align-items:center;
-gap:35px;
-margin-top:40px;
+justify-content:center;
+gap:18px;
 }
 
-.silvia img{
-width:340px;
-border-radius:22px;
-box-shadow:0 10px 30px rgba(0,0,0,.5);
+.menuFinal a{
+padding:15px 24px;
+border:1px solid rgba(255,255,255,.2);
+border-radius:999px;
+color:white;
+text-decoration:none;
+font-size:16px;
+transition:.3s;
+background:rgba(255,255,255,.05);
 }
 
-.silvia-text{
-flex:1;
-min-width:280px;
-}
-
-.silvia-text h3{
-font-size:40px;
-margin-bottom:15px;
-}
-
-.silvia-text p{
-text-align:left;
-font-size:22px;
-line-height:1.8;
-}
-
-.final{
-padding:90px 25px;
-background:#0a0a0a;
-text-align:center;
-}
-
-.final p{
-max-width:950px;
-margin:auto;
-font-size:22px;
-line-height:2;
-opacity:.92;
-}
-
-.final .firma{
-margin-top:40px;
-font-size:22px;
+.menuFinal a:hover{
+background:white;
+color:black;
 }
 
 footer{
-padding:35px;
+margin-top:90px;
+padding:40px 20px;
 text-align:center;
-background:black;
-opacity:.75;
 font-size:14px;
+opacity:.7;
+border-top:1px solid rgba(255,255,255,.08);
 }
 
 @media(max-width:768px){
 
-.hero h1{
-font-size:42px;
+.textoPrincipal{
+font-size:18px;
+line-height:1.9;
 }
 
-.hero p{
-font-size:16px;
+.fraseSilvia{
+font-size:22px;
 }
 
-.section h2{
-font-size:34px;
+.fraseJorge{
+font-size:19px;
 }
 
-.silvia{
-justify-content:center;
-text-align:center;
+.menuFinal{
+gap:12px;
 }
 
-.silvia-text p{
-text-align:center;
+.menuFinal a{
+font-size:14px;
+padding:13px 18px;
 }
 
 }
@@ -220,117 +155,44 @@ text-align:center;
 
 <section class="hero">
 
-<h1>El Monolito</h1>
+<img src="logo.png" class="logo">
 
-<p>
-Gracias a todos los que hicieron posible este sueño desde el 25 de enero de 2008.
-Cada día trabajado, cada conversación y cada recuerdo hicieron que todo mereciese la pena.
-</p>
+<img src="dibujo-jorge.jpg" class="dibujo">
 
-<div class="firma">
-— Javi
-</div>
-
-</section>
-
-<section class="menu">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop">
-<span>Nuestros cafés</span>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=1200&auto=format&fit=crop">
-<span>Próximamente</span>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=1200&auto=format&fit=crop">
-<span>Familia</span>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1200&auto=format&fit=crop">
-<span>Historia</span>
-</div>
-
-</section>
-
-<section class="section">
-
-<h2>Historia</h2>
-
-<p>
+<div class="fraseJorge">
 “Solo un amigo sabe hacer algo así.<br>
 Gracias, Jorge.”
-</p>
+</div>
 
-</section>
+<div class="textoPrincipal">
 
-<section class="section">
+Gracias a todos los que hicieron posible que aquel sueño que empezó allá por el 2008 llegase hasta aquí.<br><br>
 
-<h2>Nuestros cafés</h2>
+Grandes momentos que uno sigue llevando en su retina y que hacen que cada día trabajado haya merecido la pena.<br><br>
 
-<div class="grid">
+El Monolito nunca fue solo una cafetería.<br>
+Siempre intentamos crear un lugar cercano, familiar y auténtico, donde compartir conversaciones, cafés, risas y recuerdos frente al puerto de Navia.<br><br>
 
-<img src="cafe1.jpg">
-<img src="cafe2.jpg">
-<img src="cafe3.jpg">
+Todos sabéis que siempre miré antes a la persona que al cliente.<br><br>
+
+Por eso me siento un privilegiado de poder seguir viendo cómo tantas historias, amistades y momentos forman parte del día a día de esta casa.<br><br>
+
+Gracias por acompañarnos durante todos estos años.
+
+<div class="firma">
+— Firmado Javi · Desde 25 enero 2008
+</div>
 
 </div>
 
-</section>
+<div class="silviaBox">
 
-<section class="section">
+<img src="silvia.jpg" class="silvia">
 
-<h2>Próximamente</h2>
-
-<p>
-Seguimos mejorando.<br><br>
-Muy pronto nuevas experiencias en El Monolito.
-</p>
-
-<div class="grid">
-
-<img src="cerveza1.jpg">
-<img src="cerveza2.jpg">
-<img src="cerveza3.jpg">
-
+<div class="fraseSilvia">
+“Sin ti sería imposible.<br>
+El motor del día a día.”
 </div>
-
-</section>
-
-<section class="section">
-
-<h2>Familia</h2>
-
-<p>
-Persona, no cliente.
-</p>
-
-<div class="grid">
-
-<img src="familia.jpg">
-
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="silvia">
-
-<img src="silvia.jpg">
-
-<div class="silvia-text">
-
-<h3>Silvia</h3>
-
-<p>
-Sin ti sería imposible.<br><br>
-El motor del día a día.
-</p>
 
 <div class="firma">
 — Javi
@@ -338,36 +200,24 @@ El motor del día a día.
 
 </div>
 
+<div class="menuFinal">
+
+<a href="#">Nuestra historia</a>
+<a href="#">Familia</a>
+<a href="#">Nuestros cafés</a>
+<a href="#">Próximamente</a>
+<a href="#">Galería</a>
+<a href="#">Contacto</a>
+
 </div>
-
-</section>
-
-<section class="final">
-
-<p>
-Gracias a todos los que el sueño que empezó allá por el 2008 se hiciese posible.<br><br>
-
-Grandes momentos que uno lleva aún en su retina para así poder disfrutarlos cada poco.<br><br>
-
-Creo que no puedo pedir más como persona.<br><br>
-
-Todos sabéis qué es lo que siempre primero miré:
-persona, no cliente.<br><br>
-
-Me siento un privilegiado de poder tener un lugar donde compartir.
-</p>
-
-<div class="firma">
-Javi · Desde 25 enero 2008
-</div>
-
-</section>
 
 <footer>
 
-El Monolito
+EL MONOLITO · NAVIA
 
 </footer>
+
+</section>
 
 </body>
 </html>
