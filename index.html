@@ -3,149 +3,123 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>El Monolito · Navia</title>
+<title>El Monolito</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial, Helvetica, sans-serif;
-background:#111;
-color:white;
-overflow-x:hidden;
+font-family:Arial, sans-serif;
+background:#f3f3f3;
+color:#222;
+text-align:center;
 }
 
-.hero{
-min-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:50px 25px;
-background:#111;
+header{
+padding:40px 20px 20px;
+background:white;
 }
 
 .logo{
-width:140px;
-margin-bottom:30px;
+width:90%;
+max-width:500px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
 }
 
-.dibujo{
-width:100%;
-max-width:900px;
-border-radius:22px;
-box-shadow:0 10px 35px rgba(0,0,0,.45);
-margin-bottom:25px;
+h1{
+margin-top:25px;
+font-size:42px;
+color:#2d2d2d;
 }
 
-.fraseJorge{
-font-size:22px;
+.frase{
+max-width:850px;
+margin:30px auto;
+font-size:20px;
 line-height:1.8;
-margin-bottom:40px;
-font-style:italic;
-opacity:.95;
-}
-
-.textoPrincipal{
-max-width:900px;
-font-size:22px;
-line-height:2;
-margin:auto;
-opacity:.92;
-}
-
-.silviaBox{
-margin-top:70px;
-max-width:900px;
-display:flex;
-flex-direction:column;
-align-items:center;
-}
-
-.silvia{
-width:100%;
-max-width:420px;
-border-radius:24px;
-box-shadow:0 10px 35px rgba(0,0,0,.5);
-margin-bottom:25px;
-}
-
-.fraseSilvia{
-font-size:26px;
-line-height:1.8;
-font-weight:700;
+padding:0 20px;
 }
 
 .firma{
 margin-top:20px;
-font-size:18px;
-opacity:.8;
-font-style:italic;
+font-size:22px;
+font-weight:bold;
 }
 
-.menuFinal{
-margin-top:90px;
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:18px;
+.section{
+padding:70px 20px;
+background:white;
+margin-top:25px;
 }
 
-.menuFinal a{
-padding:15px 24px;
-border:1px solid rgba(255,255,255,.2);
-border-radius:999px;
+.section h2{
+font-size:34px;
+margin-bottom:25px;
+color:#222;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+max-width:1200px;
+margin:auto;
+}
+
+.grid img{
+width:100%;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.silvia{
+max-width:700px;
+margin:auto;
+}
+
+.silvia img{
+width:100%;
+border-radius:25px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.silvia p{
+margin-top:20px;
+font-size:24px;
+line-height:1.6;
+}
+
+.menu{
+padding:40px 20px 70px;
+}
+
+.menu a{
+display:block;
+background:#222;
 color:white;
 text-decoration:none;
-font-size:16px;
-transition:.3s;
-background:rgba(255,255,255,.05);
+padding:18px;
+margin:15px auto;
+max-width:400px;
+border-radius:15px;
+font-size:22px;
+transition:0.3s;
 }
 
-.menuFinal a:hover{
-background:white;
-color:black;
+.menu a:hover{
+background:#555;
 }
 
 footer{
-margin-top:90px;
-padding:40px 20px;
-text-align:center;
-font-size:14px;
-opacity:.7;
-border-top:1px solid rgba(255,255,255,.08);
-}
-
-@media(max-width:768px){
-
-.textoPrincipal{
+padding:50px 20px;
 font-size:18px;
-line-height:1.9;
-}
-
-.fraseSilvia{
-font-size:22px;
-}
-
-.fraseJorge{
-font-size:19px;
-}
-
-.menuFinal{
-gap:12px;
-}
-
-.menuFinal a{
-font-size:14px;
-padding:13px 18px;
-}
-
+line-height:1.8;
 }
 
 </style>
@@ -153,71 +127,163 @@ padding:13px 18px;
 
 <body>
 
-<section class="hero">
+<header>
 
-<img src="logo.png" class="logo">
+<img src="IMG_20240423_173348.jpg" class="logo">
 
-<img src="dibujo-jorge.jpg" class="dibujo">
+<h1>El Monolito</h1>
 
-<div class="fraseJorge">
-“Solo un amigo sabe hacer algo así.<br>
-Gracias, Jorge.”
-</div>
+<div class="frase">
+<p>
+Solo un amigo sabe hacer esto.<br>
+Gracias Jorge.
+</p>
 
-<div class="textoPrincipal">
+<br><br>
 
-Gracias a todos los que hicieron posible que aquel sueño que empezó allá por el 2008 llegase hasta aquí.<br><br>
+<p>
+Gracias a todos los que hicieron posible el sueño que empezó allá por el 25 de enero de 2008.<br><br>
 
-Grandes momentos que uno sigue llevando en su retina y que hacen que cada día trabajado haya merecido la pena.<br><br>
+Grandes momentos que uno lleva aún en su retina para así poder disfrutarlos cada poco.<br><br>
 
-El Monolito nunca fue solo una cafetería.<br>
-Siempre intentamos crear un lugar cercano, familiar y auténtico, donde compartir conversaciones, cafés, risas y recuerdos frente al puerto de Navia.<br><br>
+Creo que no puedo pedir más como persona.<br>
+Todos sabéis que lo primero que siempre miré fue la persona, no el cliente.<br><br>
 
-Todos sabéis que siempre miré antes a la persona que al cliente.<br><br>
+Me siento un privilegiado de poder poner un lugar donde compartir.<br><br>
 
-Por eso me siento un privilegiado de poder seguir viendo cómo tantas historias, amistades y momentos forman parte del día a día de esta casa.<br><br>
-
-Gracias por acompañarnos durante todos estos años.
-
-<div class="firma">
-— Firmado Javi · Desde 25 enero 2008
-</div>
-
-</div>
-
-<div class="silviaBox">
-
-<img src="silvia.jpg" class="silvia">
-
-<div class="fraseSilvia">
-“Sin ti sería imposible.<br>
-El motor del día a día.”
-</div>
+Mereció la pena cada día trabajado.
+</p>
 
 <div class="firma">
-— Javi
+Firmado Javi
+</div>
 </div>
 
+</header>
+
+<div class="menu">
+
+<a href="#silvia">Silvia ❤️</a>
+
+<a href="#cafes">Cafés ☕</a>
+
+<a href="#familia">Familia ❤️</a>
+
+<a href="#momentos">Momentos ⚽</a>
+
+<a href="#lapoza">La Poza ED 🏃</a>
+
+<a href="#cerveza">Próximamente 🍺</a>
+
 </div>
 
-<div class="menuFinal">
+<section class="section" id="silvia">
 
-<a href="#">Nuestra historia</a>
-<a href="#">Familia</a>
-<a href="#">Nuestros cafés</a>
-<a href="#">Próximamente</a>
-<a href="#">Galería</a>
-<a href="#">Contacto</a>
+<h2>Silvia ❤️</h2>
+
+<div class="silvia">
+
+<img src="IMG_20240516_160643.jpg">
+
+<p>
+Sin ti sería imposible.<br>
+El motor del día a día.
+</p>
 
 </div>
+
+</section>
+
+<section class="section" id="cafes">
+
+<h2>Cafés ☕</h2>
+
+<div class="grid">
+
+<img src="IMG_20240120_131735_297.jpg">
+
+<img src="IMG_20240120_131735_228.jpg">
+
+<img src="IMG_20240113_015659_440.jpg">
+
+</div>
+
+</section>
+
+<section class="section" id="familia">
+
+<h2>Familia ❤️</h2>
+
+<div class="grid">
+
+<img src="IMG_20250609_134212.jpg">
+
+</div>
+
+</section>
+
+<section class="section" id="momentos">
+
+<h2>Momentos ⚽</h2>
+
+<div class="grid">
+
+<img src="IMG_20250727_205839.jpg">
+
+<img src="IMG_20250727_205844.jpg">
+
+<img src="IMG_20250727_210013.jpg">
+
+</div>
+
+</section>
+
+<section class="section" id="lapoza">
+
+<h2>La Poza ED 🏃</h2>
+
+<p style="font-size:22px;margin-bottom:35px;">
+Orgulloso de apoyar el deporte y a la gente que lucha cada día.
+</p>
+
+<div class="grid">
+
+<img src="IMG_20260601_011543.jpg">
+
+<img src="IMG_20260601_011610.jpg">
+
+<img src="IMG_20260601_011634.jpg">
+
+<img src="IMG_20260601_011659.jpg">
+
+</div>
+
+</section>
+
+<section class="section" id="cerveza">
+
+<h2>Próximamente 🍺</h2>
+
+<div class="grid">
+
+<img src="image-edit-20260415032151.jpg">
+
+<img src="file_0000000069b4720a9fc4c188d242.jpg">
+
+</div>
+
+<p style="margin-top:35px;font-size:24px;">
+No nos quedamos de brazos cruzados.<br>
+Seguimos mejorando.
+</p>
+
+</section>
 
 <footer>
 
-EL MONOLITO · NAVIA
+El Monolito · Desde 2008
 
 </footer>
-
-</section>
 
 </body>
 </html>
