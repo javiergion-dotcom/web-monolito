@@ -3,169 +3,369 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cafetería El Monolito</title>
+<title>El Monolito</title>
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-margin:0;
-font-family:Arial,Helvetica,sans-serif;
-background:#f4eadb;
-color:#2d241d;
-}
-
-header{
-background:#8b4b2c;
+font-family:Arial, Helvetica, sans-serif;
+background:#111;
 color:white;
-padding:20px;
-text-align:center;
-}
-
-header h1{
-margin:0;
-font-size:42px;
-}
-
-header p{
-margin-top:10px;
-font-size:18px;
+overflow-x:hidden;
 }
 
 .hero{
-padding:60px 20px;
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
+url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-background:linear-gradient(to bottom,#f4eadb,#e7d2bb);
+padding:20px;
 }
 
-.hero h2{
-font-size:48px;
-margin-bottom:20px;
+.hero h1{
+font-size:58px;
+margin-bottom:15px;
+letter-spacing:2px;
 }
 
 .hero p{
-max-width:800px;
-margin:auto;
-font-size:20px;
-line-height:1.6;
+max-width:700px;
+font-size:18px;
+line-height:1.7;
+opacity:.92;
 }
 
-.boton{
-display:inline-block;
-margin-top:30px;
-padding:15px 30px;
-background:#8b4b2c;
-color:white;
-text-decoration:none;
-border-radius:40px;
-font-weight:bold;
+.firma{
+margin-top:25px;
+font-size:17px;
+opacity:.8;
+font-style:italic;
 }
 
-.seccion{
-padding:60px 20px;
-max-width:1100px;
-margin:auto;
-}
-
-.cards{
+.menu{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 gap:20px;
-margin-top:30px;
+padding:40px 25px;
+background:#181818;
 }
 
 .card{
-background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
+height:170px;
+border-radius:18px;
+overflow:hidden;
+position:relative;
+cursor:pointer;
+transition:.4s;
+box-shadow:0 10px 25px rgba(0,0,0,.4);
 }
 
-.card h3{
-margin-top:0;
-color:#8b4b2c;
+.card:hover{
+transform:scale(1.03);
 }
 
-footer{
-background:#2d241d;
-color:white;
+.card img{
+width:100%;
+height:100%;
+object-fit:cover;
+filter:brightness(.65);
+}
+
+.card span{
+position:absolute;
+bottom:18px;
+left:18px;
+font-size:24px;
+font-weight:bold;
+}
+
+.section{
+padding:70px 25px;
+max-width:1200px;
+margin:auto;
+}
+
+.section h2{
+font-size:42px;
+margin-bottom:20px;
 text-align:center;
-padding:30px 20px;
+}
+
+.section p{
+max-width:850px;
+margin:auto;
+line-height:1.8;
+font-size:19px;
+text-align:center;
+opacity:.92;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+margin-top:45px;
+}
+
+.grid img{
+width:100%;
+border-radius:18px;
+box-shadow:0 8px 25px rgba(0,0,0,.45);
+transition:.4s;
+}
+
+.grid img:hover{
+transform:scale(1.02);
+}
+
+.silvia{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:35px;
 margin-top:40px;
 }
 
-</style>
+.silvia img{
+width:340px;
+border-radius:22px;
+box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
 
+.silvia-text{
+flex:1;
+min-width:280px;
+}
+
+.silvia-text h3{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.silvia-text p{
+text-align:left;
+font-size:22px;
+line-height:1.8;
+}
+
+.final{
+padding:90px 25px;
+background:#0a0a0a;
+text-align:center;
+}
+
+.final p{
+max-width:950px;
+margin:auto;
+font-size:22px;
+line-height:2;
+opacity:.92;
+}
+
+.final .firma{
+margin-top:40px;
+font-size:22px;
+}
+
+footer{
+padding:35px;
+text-align:center;
+background:black;
+opacity:.75;
+font-size:14px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.section h2{
+font-size:34px;
+}
+
+.silvia{
+justify-content:center;
+text-align:center;
+}
+
+.silvia-text p{
+text-align:center;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
-<header>
-<h1>CAFETERÍA EL MONOLITO</h1>
-<p>Navia · Asturias</p>
-</header>
-
 <section class="hero">
 
-<h2>Un bar con alma</h2>
+<h1>El Monolito</h1>
 
 <p>
-Café, desayunos, pinchos, terraza y ambiente cercano.
-Un lugar pensado para disfrutar del día a día,
-con trato familiar y esencia de cafetería de siempre.
+Gracias a todos los que hicieron posible este sueño desde el 25 de enero de 2008.
+Cada día trabajado, cada conversación y cada recuerdo hicieron que todo mereciese la pena.
 </p>
 
-<a class="boton" href="#contacto">
-CONTACTAR
-</a>
-
-</section>
-
-<section class="seccion">
-
-<h2>Qué ofrecemos</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>☕ Cafés y desayunos</h3>
-<p>
-Buen café, tostadas y desayunos para empezar bien el día.
-</p>
-</div>
-
-<div class="card">
-<h3>🍻 Cervezas y terraza</h3>
-<p>
-Un sitio tranquilo para tomar algo y disfrutar del ambiente.
-</p>
-</div>
-
-<div class="card">
-<h3>🥪 Pinchos</h3>
-<p>
-Opciones rápidas y sencillas para acompañar cualquier momento.
-</p>
-</div>
-
+<div class="firma">
+— Javi
 </div>
 
 </section>
 
-<section class="seccion" id="contacto">
+<section class="menu">
 
-<h2>Contacto</h2>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop">
+<span>Nuestros cafés</span>
+</div>
 
-<p><strong>📍 Navia, Asturias</strong></p>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=1200&auto=format&fit=crop">
+<span>Próximamente</span>
+</div>
 
-<p><strong>☎️ Teléfono:</strong> pendiente</p>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=1200&auto=format&fit=crop">
+<span>Familia</span>
+</div>
 
-<p><strong>📷 Redes sociales:</strong> pendiente</p>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1200&auto=format&fit=crop">
+<span>Historia</span>
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Historia</h2>
+
+<p>
+“Solo un amigo sabe hacer algo así.<br>
+Gracias, Jorge.”
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>Nuestros cafés</h2>
+
+<div class="grid">
+
+<img src="cafe1.jpg">
+<img src="cafe2.jpg">
+<img src="cafe3.jpg">
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Próximamente</h2>
+
+<p>
+Seguimos mejorando.<br><br>
+Muy pronto nuevas experiencias en El Monolito.
+</p>
+
+<div class="grid">
+
+<img src="cerveza1.jpg">
+<img src="cerveza2.jpg">
+<img src="cerveza3.jpg">
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Familia</h2>
+
+<p>
+Persona, no cliente.
+</p>
+
+<div class="grid">
+
+<img src="familia.jpg">
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="silvia">
+
+<img src="silvia.jpg">
+
+<div class="silvia-text">
+
+<h3>Silvia</h3>
+
+<p>
+Sin ti sería imposible.<br><br>
+El motor del día a día.
+</p>
+
+<div class="firma">
+— Javi
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="final">
+
+<p>
+Gracias a todos los que el sueño que empezó allá por el 2008 se hiciese posible.<br><br>
+
+Grandes momentos que uno lleva aún en su retina para así poder disfrutarlos cada poco.<br><br>
+
+Creo que no puedo pedir más como persona.<br><br>
+
+Todos sabéis qué es lo que siempre primero miré:
+persona, no cliente.<br><br>
+
+Me siento un privilegiado de poder tener un lugar donde compartir.
+</p>
+
+<div class="firma">
+Javi · Desde 25 enero 2008
+</div>
 
 </section>
 
 <footer>
 
-CAFETERÍA EL MONOLITO · NAVIA
+El Monolito
 
 </footer>
 
